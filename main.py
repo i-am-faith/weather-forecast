@@ -94,7 +94,7 @@ elif selected_page == "About":
         )
 
     # Insert an image from a local file
-    team_image = "images\project members.png"
+    team_image = "images/project members.png"
     st.image(team_image, use_column_width=True)
 
 
