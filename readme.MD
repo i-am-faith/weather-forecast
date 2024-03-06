@@ -6,7 +6,12 @@ Welcome to the Weather Forecast application! This app provides weather predictio
 
 ## Preview
 
-![Weather Forecast App](preview.png)
+![Weather Forecast App]
+## PC View - 
+<img src="images/weather site preview.png">
+
+## Mobile View - 
+<img src="images/weather site preview mobile.png.jpg">
 
 ## Getting Started
 
