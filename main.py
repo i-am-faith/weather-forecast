@@ -18,7 +18,7 @@ selected_page = st.sidebar.radio("Navigation", page_options)
 if selected_page == "Home":
     # Add title
     st.title("Weather Forecast")
-    local_image_path = "images\weather_photo.jpg"
+    local_image_path = "images/weather_photo.jpg"
     st.image(local_image_path, use_column_width=True)
 
     place = st.text_input(label="Place", placeholder="Enter A City...", key="city")
