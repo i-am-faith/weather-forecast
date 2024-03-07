@@ -104,21 +104,26 @@ elif selected_page == "About":
 # Contact Page
 elif selected_page == "Contact":
     import streamlit as st
+    import requests
 
-    st.title("Contact Us")
-
+    st.title(":mailbox: Get In Touch With Us")
     st.write("Feel free to reach out to us with any questions, feedback, or inquiries.")
 
-    # Create form inputs
-    name = st.text_input("Your Name")
-    email = st.text_input("Your Email")
-    message = st.text_area("Message", height=150)
 
-    # Add a submit button
-    if st.button("Submit"):
-        # You can add your logic to handle the form submission here
-        # For example, sending an email, storing the form data, etc.
+    contact_form = """
+    <form action="https://formsubmit.co/sourin.mukherjee2105833@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message here"></textarea>
+    <button type="submit">Send</button>
+    </form>
+    """
+    st.markdown (contact_form, unsafe_allow_html=True)
 
-        # Display a success message after submission
-        st.success("Your message has been submitted successfully!")
+    # Use Local CSS File
+    def local_css(file_name):
+        with open(file_name) as f:
+            st.markdown (f" <style>{f.read()}</style>", unsafe_allow_html=True)
+    local_css("style.css")
     
