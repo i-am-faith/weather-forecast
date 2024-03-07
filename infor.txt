@@ -1,3 +1,8 @@
-deploy
-assign task
-collaborator
+collaborator icon -> pending
+Aritra and Chetna - Describe ML Model and ipynb file
+Soumik - Backend, API and Testing
+Sourin - Fronend
+
+
+
+Aritra, Soumik, Chetna - Canva Presentation
