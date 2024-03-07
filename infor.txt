@@ -1,5 +1,5 @@
 contributor icon -> pending
-Aritra and Chetna - Describe ML Model and ipynb file
+Aritra and Chetna - Describe ML Model and ipynb file 
 Soumik - Describe Backend, API and Testing
 Sourin - Describe Fronend
 
@@ -8,5 +8,6 @@ Aritra, Soumik, Chetna - Canva Presentation
 
 ------------------------------------------Testing-------------------------------------------------------
 
-forking done
+forking done1
 Contribution done by Chetna Bhalotia
+
