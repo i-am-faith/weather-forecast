@@ -25,13 +25,13 @@ Make sure you have Python installed on your machine.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/i-am-faith/weather-forecast.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repository
+    cd weather-forecast
     ```
 
 3. Install dependencies:
