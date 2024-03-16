@@ -11,12 +11,11 @@ st.set_page_config(
 
 
 
-# Streamlit Navbar
+#Navbar
 page_options = ["Home", "About", "Contact"]
 selected_page = st.sidebar.radio("Navigation", page_options)
 
 if selected_page == "Home":
-    # Add title
     st.title("Weather Forecast")
     local_image_path = "images/weather_photo.jpg"
     st.image(local_image_path, use_column_width=True)
@@ -36,7 +35,6 @@ if selected_page == "Home":
     )
     st.subheader(f"{option} for the next {days} day(s) in {place}")
 
-    # Get the temperature/sky data
     try:
         if place:
             filter_data = get_data(place, days)
@@ -63,16 +61,15 @@ if selected_page == "Home":
                     }
                     image_paths = [images[condition] for condition in sky_conditions]
                 
-                    # Concatenate timestamps and captions for each image
+
                     captions = [
                         f"{timestamp}: {condition}" for timestamp, condition in zip(["12am", "4am", "8am", "12pm", "4pm", "8pm"], sky_conditions)
                     ]
                 
-                    # Display all images in one line
+
                     st.image(image_paths, caption=captions, width=115)
 
     except KeyError:
-        # st.error("Please enter a valid city")
         st.warning("PLEASE ENTER A VALID CITY!! ")
         st.warning(
         "If you are facing issues while searching for your City, you can try these methods:\n"
@@ -93,7 +90,7 @@ elif selected_page == "About":
         "3. ⚠️THIS WEBSITE IS USED FOR TRAINING AND DEVELOPMENT PURPOSES⚠️"
         )
 
-    # Insert an image from a local file
+
     team_image = "images/project members.png"
     st.image(team_image, use_column_width=True)
 
