@@ -9,5 +9,5 @@ Aritra, Soumik, Chetna - Canva Presentation
 
 3rd march final submission
 next lab information update
-
+add weekdays name in prediction
 
